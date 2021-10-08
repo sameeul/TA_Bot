@@ -1,0 +1,12 @@
+{
+    "2021-10-08 08:07:39.194267": {
+        "EventType": "Task Start",
+        "Name": "Delete Files From Amazon S3 Bucket",
+        "Description": "Delete Files From Amazon S3 Bucket As Part of Clean-Up"
+    },
+    "2021-10-08 08:07:39.381783": {
+        "EventType": "Task End",
+        "Name": "Delete Files From Amazon S3 Bucket",
+        "Description": "Delete Files From Amazon S3 Bucket As Part of Clean-Up"
+    }
+}

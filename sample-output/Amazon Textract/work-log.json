@@ -1,0 +1,32 @@
+{
+    "2021-10-08 08:07:08.391466": {
+        "EventType": "Task Start",
+        "Name": "Process PDF invoices with Amazon Textract",
+        "Description": "Process PDF invoices with Amazon Textract and etc"
+    },
+    "2021-10-08 08:07:09.772960": {
+        "EventType": "Sub Task Start",
+        "Name": "Process PDF",
+        "MetaData": "Optional argument: {'job_ids': ['d646459cb4d73e7bf2c22b4c6681eff44b50eef795541310a940a4336e1ef8e2', '603d2bcb8e2928b9e09bb079ad1939e6f3cd8bb93e1f4c7b7f404484691ca3d6', '2b103ccceeaf4b3a731af9103830439d06ae322f38e3d4aadfd803f049e19d77', '47451fe81e22d567f0cc35a58246e511c0f992639bdb1cb21a3ef17967c7df80', 'd6856ed523862ce4668add20fe78828e2bd79c90a07209553c6b6aaa512a9bf4', 'c8aea6d63dda2b4b0ebe3289661f87cd388a7843757e48fbd915f56e732d5623', 'd8f4002dff1e2b73c979eca6ae9a493d43d194942e83435cd154d61de12b37f6', 'f84ab5ebc445ebc99dfd22239f6cb13db8f4930f20ad08c3e31d8eac382df8f4', '697037305f8f3608f8ae6b7fb12ec5c12d9d65d332afdcc9a4a1743f6fb369a8', 'fe3a981253c5691cd64ac0d4098b39f2fb9bf3919e757755d9de7b11843c34a5']}"
+    },
+    "2021-10-08 08:07:21.670585": {
+        "EventType": "Sub Task End",
+        "Name": "Process PDF",
+        "MetaData": "Optional argument: Default value"
+    },
+    "2021-10-08 08:07:21.675572": {
+        "EventType": "Sub Task Start",
+        "Name": "Create Excel",
+        "MetaData": "Optional argument: {'invoices': [{'invoice_number': 'INV-5643', 'order_number': '62445', 'invoice_date': 'October 11, 2021', 'due_date': 'October 18, 2021', 'balance_due': '1,731.00', 'from': '', 'to': 'Smith, Dawson and Morgan Ltd 9765 Linda Points Lake Bryan, MN 54591'}, {'invoice_number': 'INV-5059', 'order_number': '35424', 'invoice_date': 'October 08, 2021', 'due_date': 'October 15, 2021', 'balance_due': '4,059.00', 'from': '', 'to': 'Dillon, Hamilton and Martin Group 8264 Gary Locks Suite 507 West Monicafurt, ME 66878'}, {'invoice_number': 'INV-1813', 'order_number': '89666', 'invoice_date': 'October 14, 2021', 'due_date': 'October 21, 2021', 'balance_due': '4,306.00', 'from': '', 'to': 'Jackson-Griffith PLC 91474 Sarah Manor Apt. 061 Port Robertfort, LA 01563'}, {'invoice_number': 'INV-9693', 'order_number': '46785', 'invoice_date': 'October 04, 2021', 'due_date': 'October 11, 2021', 'balance_due': '3,265.00', 'from': '', 'to': 'Pratt Inc and Sons PSC 5788, Box 4175 APO AE 56191'}, {'invoice_number': 'INV-2831', 'order_number': '69423', 'invoice_date': 'October 09, 2021', 'due_date': 'October 16, 2021', 'balance_due': '4,108.00', 'from': '', 'to': 'Olsen, Dawson and Long Group Unit 7088 Box 5916 DPO AA 58308'}, {'invoice_number': 'INV-2581', 'order_number': '48850', 'invoice_date': 'October 05, 2021', 'due_date': 'October 12, 2021', 'balance_due': '4,405.00', 'from': '', 'to': 'Hamilton-Hill PLC 41420 Amanda Loop Richardfurt, WY 32786'}, {'invoice_number': 'INV-4385', 'order_number': '72657', 'invoice_date': 'October 13, 2021', 'due_date': 'October 20, 2021', 'balance_due': '1,285.00', 'from': '', 'to': 'Mccormick Group PLC PSC 7991, Box 9801 APO AP 36727'}, {'invoice_number': 'INV-8154', 'order_number': '39977', 'invoice_date': 'October 08, 2021', 'due_date': 'October 15, 2021', 'balance_due': '1,582.00', 'from': '', 'to': 'Williams, Dudley and Jones LLC 93998 Foster Camp Lake Michelleland, MO 23148'}, {'invoice_number': 'INV-2146', 'order_number': '73405', 'invoice_date': 'October 06, 2021', 'due_date': 'October 13, 2021', 'balance_due': '4,899.00', 'from': '', 'to': 'Vang, Henry and Bell Ltd 837 Ellis Underpass New Kaitlinbury, WY 26161'}, {'invoice_number': 'INV-4458', 'order_number': '79283', 'invoice_date': 'October 14, 2021', 'due_date': 'October 21, 2021', 'balance_due': '1,484.00', 'from': '', 'to': 'Hall Ltd and Sons 321 Jennifer Streets Suite 385 Thomasland, DE 90547'}]}"
+    },
+    "2021-10-08 08:07:21.729935": {
+        "EventType": "Sub Task End",
+        "Name": "Create Excel",
+        "MetaData": "Optional argument: Default value"
+    },
+    "2021-10-08 08:07:21.732924": {
+        "EventType": "Task End",
+        "Name": "Process PDF invoices with Amazon Textract",
+        "Description": "Process PDF invoices with Amazon Textract and etc"
+    }
+}

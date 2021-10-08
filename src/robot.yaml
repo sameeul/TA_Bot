@@ -1,0 +1,28 @@
+tasks:
+  Process PDF invoices with Amazon Textract:
+    robotTaskName: Process PDF invoices with Amazon Textract
+    robotTaskDescription:
+      Reads the invoices from an S3 bucket, processes the invoice Process PDF invoices with Amazon Textract,
+      Saves the extracted invoice data in an Excel file in the output directory, then finally, deletes the
+      PDF invoices from the Amazon S3 bucket.
+  Create Invoices:
+    robotTaskName: Create Invoices
+    robotTaskDescription:
+      Generates random PDF invoices (using invoiceGenerator.py) and uploads them to Amazon S3 bucket,
+      then saves the generated PDF invoices to the output directory for debugging purposes.
+  Delete Files From Amazon S3 Bucket:
+    robotTaskName: Delete Files From Amazon S3 Bucket
+    robotTaskDescription:
+      A utility task for deleting the PDF invoices from the Amazon S3 bucket,
+      which can be executed separately when you want to empty the Amazon S3 bucket,
+      and called by the Process PDF invoices with Amazon Textract task in the teardown phase.
+
+condaConfigFile: conda.yaml
+artifactsDir: output
+PATH:
+  - .
+PYTHONPATH:
+  - .
+  - resources
+ignoreFiles:
+  - .gitignore
