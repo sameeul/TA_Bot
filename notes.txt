@@ -1,4 +1,5 @@
-A module named 'Logger' is created. Singleton design pattern is used so that all the function calls use a single instance of the Logger class. The source is in resources/Logger.py
+A module named 'Logger' is created. Singleton design pattern is used so that all the function calls 
+use a single instance of the Logger class. The source is in resources/Logger.py
 
 For the RPA scripts, these 4 keywords are created. The keywords are defined in resources/logger.resource file.
 
@@ -9,7 +10,8 @@ For the RPA scripts, these 4 keywords are created. The keywords are defined in r
 * Log Sub Task End
 	[Arguments]	${sub_task_name}	${sub_task_meta_data_dict}
 
-For the sub_task logging calls, sub_task_meta_data_dict is an optional argument to pass various kinds of metadata that the developer is interested to log.
+For the sub_task logging calls, sub_task_meta_data_dict is an optional argument to pass various kinds
+of metadata that the developer is interested to log.
 
 There are 2 addition Logger API available for Python scripts. These are:
 * post_sub_task_start_info(self, sub_task_name, meta_data_dict)
@@ -30,8 +32,20 @@ The telemetry data as a JSON object which has the following format:
 The sample work-logs are placed in the sample_output directory.
 
 A couple of observation while writing this:
-* I see that robot.yaml file has the task name and task description. I could not find anything in the RPA documentation to access that info from task.robot file. So for sending task description, I am setting an built-in variable ${TEST_DOCUMENTATION} and using it later.
-* Also, RPA documentation mentions another internal variable ${TEST_STATUS} that has the current test status. However, I could not access it in the script. I kept getting a "variable not found" error.
-* The instructions were very clear to follow. However, I think it does not mention to edit to "invoice.resource" file to point to a correct S3 bucket. If you want to directly run it from here, please make sure that you point to a S3 bucket that you have access to.
-* The output directory is currently hard-coded in Logger.py. I did not find an easy way to pass ${OUTDIR} value from the script during the class initialization. Actually, the RPA documentation does not really talk about when the classes get initialized.
-* I also found that if you pass in an optional argument, it natively converts it to a string. In Logger.py, some code can be added to convert that string back to dictionary.
+* I see that robot.yaml file has the task name and task description. I could not find anything in the 
+RPA documentation to access that info from task.robot file. So for sending task description, I am 
+setting an built-in variable ${TEST_DOCUMENTATION} and using it later.
+
+* Also, RPA documentation mentions another internal variable ${TEST_STATUS} that has the current test
+status. However, I could not access it in the script. I kept getting a "variable not found" error.
+
+* The instructions were very clear to follow. However, I think it does not mention to edit to 
+"invoice.resource" file to point to a correct S3 bucket. If you want to directly run it from here, 
+please make sure that you point to a S3 bucket that you have access to.
+
+* The output directory is currently hard-coded in Logger.py. I did not find an easy way to pass ${OUTDIR} 
+value from the script during the class initialization. Actually, the RPA documentation does not really 
+talk about when the classes get initialized.
+
+* I also found that if you pass in an optional argument, it natively converts it to a string. In Logger.py, 
+some code can be added to convert that string back to dictionary.
