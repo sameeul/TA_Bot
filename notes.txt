@@ -20,7 +20,7 @@ These are used in InvoiceGenerator.py as example.
 
 The telemetry data as a JSON object which has the following format:
 {    
-	"TimeStamp": {
+    "TimeStamp": {
         "EventType": "",
         "Name": "",
         "MetaData": {}
